@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<!-- このファイルは，「リスト一覧形式」のページの例示です． -->
+<head>
+  <meta charset="UTF-8">
+  <title>ここにページのタイトルを入れる</title>
+  
+  <!-- CSSの設定（Bootstrap 5を利用する→部品の使い方は各自で調べること） -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSSの設定（演習ではcssフォルダのProA_style.cssを編集してクラスを設定すること） -->
+  <link rel="stylesheet" href="css/ProA_style.css">
+
+</head>
+
+<body>
+  <!-- ページ上部に常時表示される部分にBootstrapのNavbarというコンポーネント（部品）を表示 -->
+  <!-- その他のメニューを使う場合は，https://bootstrap-guide.com/category/navbars 等を参照のこと-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">ProA 2023</a><!-- hrefのリンク先やテキストの部分は各チームで修正すること -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ProA2023">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">フロントページ<span class="sr-only">(current)</span></a><!-- hrefのリンク先は各チームで修正すること -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detail_example.html?id=1">パラメータidの番号で内容変更</a><!-- hrefのリンク先は各チームで修正すること -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">無効</a>
+            </li>
+            <li class="nav-item dropdown"><!-- カテゴリ別のメニュー項目を作る場合などに利用する．なお，hrefのリンク先は各チームで修正すること -->
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">カテゴリ1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./detail_example.html?id=1">カテゴリ内のページ1</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=2">カテゴリ内のページ2</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=3">カテゴリ内のページ3</a></li>
+                <!-- 適宜，カテゴリ内のページがあれば，個々に項目を追加（あるいは，削除）-->
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2"  id="search_keyword" type="search" placeholder="検索..." aria-label="検索...">
+            <button class="btn btn-outline-success flex-shrink-0" id="search_btn" type="submit">検索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main" class="pt-5">
+	  <!-- ページの見出し -->
+    <div class="p-3 p-sm-5 mb-4 bg-img bg-head">
+      <div class="container">
+        <h1 class="display-4" id="top-title">サイトの名前が入ります</h1>
+        <p class="lead" id="top-abstract">ここには各ページの紹介が入ります（紹介は紹介対象の名前にするか，概要にするかは各チームで決める）</p>
+        <!-- <a class="btn btn-outline-primary btn-lg" href="#" role="button">リンク付きのボタン</a> -->
+      </div>
+    </div>
+
+    <!-- これ以降は，（同じ種類の複数の）施設紹介サイトのトップページとしての内容を各チームで作成（※ただし，CSSはcss/ProA_style.cssにまとめること） -->
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- フッターの表示 -->
+  <footer>
+    (C) All Right Reserved, 2015-2022, Infosys Project A 
+   </footer>
+	
+  <!-- JavaScriptのライブラリ（jQueryは基本ライブラリ+Bootstrap用のJavaScriptファイル） -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- 必要であれば，ここでデータ読み込みやビジュアル関係のJavaScriptライブラリなどを読み込む -->
+
+</body>
+
+</html>

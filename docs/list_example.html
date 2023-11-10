@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<!-- このファイルは，「リスト一覧形式」のページの例示です． -->
+<head>
+  <meta charset="UTF-8">
+  <title>ここにページのタイトルを入れる</title>
+  
+  <!-- CSSの設定（Bootstrap 5を利用する→部品の使い方は各自で調べること） -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSSの設定（演習ではcssフォルダのProA_style.cssを編集してクラスを設定すること） -->
+  <link rel="stylesheet" href="css/ProA_style.css">
+
+  <!-- 必要なJavaScriptライブラリやCSSの装飾があれば，ここでCSS類を読み込む -->
+
+</head>
+
+<body>
+  <!-- ページ上部に常時表示される部分にBootstrapのNavbarというコンポーネント（部品）を表示 -->
+  <!-- その他のメニューを使う場合は，https://bootstrap-guide.com/category/navbars 等を参照のこと-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">ProA 2023</a><!-- hrefのリンク先やテキストの部分は各チームで修正すること -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ProA_2023">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">フロントページ</a><!-- hrefのリンク先は各チームで修正すること -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detail_example.html?id=1">パラメータidの番号で内容変更</a><!-- hrefのリンク先は各チームで修正すること -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">無効</a>
+            </li>
+            <li class="nav-item dropdown"><!-- カテゴリ別のメニュー項目を作る場合などに利用する．なお，hrefのリンク先は各チームで修正すること -->
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">カテゴリ1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./detail_example.html?id=1">カテゴリ内のページ1</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=2">カテゴリ内のページ2</a></li>
+                <li><a class="dropdown-item" href="./detail_example.html?id=3">カテゴリ内のページ3</a></li>
+                <!-- 適宜，カテゴリ内のページがあれば，個々に項目を追加（あるいは，削除）-->
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2"  id="search_keyword" type="search" placeholder="検索..." aria-label="検索...">
+            <button class="btn btn-outline-success flex-shrink-0" id="search_btn" type="submit">検索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main" class="pt-5">
+	  <!-- ページの見出し -->
+    <div class="p-3 p-sm-5 mb-4 bg-img bg-head">
+      <div class="container">
+        <h1 class="display-4" id="top-title">サイトの名前が入ります</h1>
+        <p class="lead" id="top-abstract">ここには各ページの紹介が入ります（紹介は紹介対象の名前にするか，概要にするかは各チームで決める）</p>
+        <!-- <a class="btn btn-outline-primary btn-lg" href="#" role="button">リンク付きのボタン</a> -->
+      </div>
+    </div>
+
+    <!-- これ以降は，紹介対象を一覧形式で紹介する内容（同じ内容で複数施設や複数の場所など）として，デザインは各チームで作成 -->
+    <!-- ただし，idの値を使ってdata.jsonに蓄積してある値を差し込むようにする仕組みの利用は，要求事項のため，厳守すること -->
+    <div class="container" id="list_container">
+      <!-- Bootstarapのカードを使った繰り返しリスト要素の表示を作成 -->
+      <!-- カードの使いかたは右の例などを参照→ https://bootstrap-guide.com/components/card-->
+      <div class="row row-cols-1 row-cols-md-2 g-4" id="list_container_row">
+        <!--
+        <div class="card">
+          <img class="card-img-top" src="..." alt="カードの画像">
+          <div class="card-body">
+            <h5 class="card-title">カードのタイトル</h5>
+            <p class="card-text">これは、追加コンテンツへの自然な導入として以下のテキストをサポートする、より幅広いカードです。このコンテンツはもう少し長くなります。</p>
+            <p class="card-text"><small class="text-muted">追加のテキスト</small></p>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </main>
+
+  <!-- フッターの表示 -->
+  <footer>
+    (C) All Right Reserved, 2015-2023, Infosys Project A 
+   </footer>
+	
+  <!-- JavaScriptのライブラリ（Bootstrap用のJavaScriptファイル） -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- JavaScriptのライブラリ（jQueryプラグイン等を使う場合は，下記のタグのコメントを外す） -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+  <!-- 施設ごとの情報のJSONデータ（本来は，データベースからサーバで作成される想定）から読み取り -->
+  <script src="js/readJSON_list.js"></script>
+
+  <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理 -->
+  <script src="js/search_list.js"></script>
+
+</body>
+
+</html>
