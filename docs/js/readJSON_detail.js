@@ -62,16 +62,16 @@ window.onload = function onLoad() {
 					if(abstract_text != null){ //<p id="abstract"></p>のタグがあったら
 						abstract_text.innerText = obj.abstract; //abstract（DBではカラム）の値に内容のテキストを変更
 					}
+				
+					let detail_text = document.getElementById("detail");
+					if(detail_text != null){//<p id="detail"></p>のタグがあったら
+						detail_text.innerHTML = obj.detail; //detail（DBではカラム）の値に内容のHTMLを変更
+					}
 					
 					let abstract_2_text = document.getElementById("abstract_2");
 					if(abstract_2_text != null){ //<p id="abstract_2"></p>のタグがあったら
 						abstract_2_text.innerText = obj.abstract_2; //abstract_2（DBではカラム）の値に内容のテキストを変更
 					}
-					let detail_text = document.getElementById("detail");
-					if(detail_text != null){//<p id="detail"></p>のタグがあったら
-						detail_text.innerHTML = obj.detail; //detail（DBではカラム）の値に内容のHTMLを変更
-					}
-
 					let image_list = document.getElementById("image_list");
 					if(image_list){//<div id="image_list">のタグがあったら
 						image_list.innerHTML = ""; //id=image_listのタグの中のHTMLを空にする
