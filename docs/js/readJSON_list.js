@@ -13,9 +13,9 @@
 
 	const detail_html = "detail_example.html"; //個別詳細形式のページのHTMLファイル
 
-	const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_example/data.json";
+	//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_example/data.json";
 	// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
-	//const json_url = "https://infosysprojecta-2023.github.io/2023-project2-各チームの記号(A～T)/data.json";
+	const json_url = "https://infosysprojecta-2023.github.io/2023-project2-j/data.json";
 
 	let q = urlParam('q'); //?q=検索語で指定されたとき
 	q = decodeURI(q); //URLエンコードされた文字列をスクリプトのコードによる文字列に戻す
