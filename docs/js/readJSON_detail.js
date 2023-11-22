@@ -11,9 +11,9 @@ window.onload = function onLoad() {
 			}
 		};
 
-		const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project1_example/data.json";
+		//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project1_example/data.json";
 		// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
-		//const json_url = "https://infosysprojecta-2023.github.io/2023-project1-j/data.json";
+		const json_url = "https://infosysprojecta-2023.github.io/2023-project1-j/data.json";
 
 		var id = 0;
 		let obj_id = document.getElementById("obj_id"); //紹介対象idを表す<input type="hidden" id="obj_id" value="0">があったら
