@@ -62,16 +62,158 @@ window.onload = function onLoad() {
 					if(abstract_text != null){ //<p id="abstract"></p>のタグがあったら
 						abstract_text.innerText = obj.abstract; //abstract（DBではカラム）の値に内容のテキストを変更
 					}
-				
-					let detail_text = document.getElementById("detail");
-					if(detail_text != null){//<p id="detail"></p>のタグがあったら
-						detail_text.innerHTML = obj.detail; //detail（DBではカラム）の値に内容のHTMLを変更
-					}
 					
 					let abstract_2_text = document.getElementById("abstract_2");
 					if(abstract_2_text != null){ //<p id="abstract_2"></p>のタグがあったら
 						abstract_2_text.innerText = obj.abstract_2; //abstract_2（DBではカラム）の値に内容のテキストを変更
 					}
+
+
+					<!--相原高校の説明-->
+					let detail_Aihara_titile_text = document.getElementById("detail_Aihara_titile");
+					if(detail_Aihara_titile_text != null){//<p id="detail_Aihara_titile"></p>のタグがあったら
+						detail_Aihara_titile_text.innerHTML = obj.detail_Aihara_titile; //detail_Aihara_titile（DBではカラム）の値に内容のHTMLを変更
+					}
+	
+					let detail_Aihara_text = document.getElementById("detail_Aihara");
+					if(detail_Aihara_text != null){//<p id="detail_Aihara"></p>のタグがあったら
+						detail_Aihara_text.innerHTML = obj.detail_Aihara; //detail_Aihara（DBではカラム）の値に内容のHTMLを変更
+
+					<!--浦和高校の説明-->
+					let detail_Urawa_titile_text = document.getElementById("detail_Urawa_titile");
+					if(detail_Urawa_titile_text != null){//<p id="detail_Urawa_titile"></p>のタグがあったら
+						detail_Urawa_titile_text.innerHTML = obj.detail_Urawa_titile; //detail_Urawa_titile（DBではカラム）の値に内容のHTMLを変更
+					}
+					
+					let detail_Urawa_text = document.getElementById("detail_Urawa");
+					if(detail_Urawa_text != null){//<p id="detail_Urawa"></p>のタグがあったら
+						detail_Urawa_text.innerHTML = obj.detail_Urawa; //detail_Urawa（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					<!--水戸高校の説明-->
+					let detail_Mizuto_titile_text = document.getElementById("detail_Mizuto_titile");
+					if(detail_Mizuto_titile_text != null){//<p id="detail_Mizuto_titile"></p>のタグがあったら
+						detail_Mizuto_titile_text.innerHTML = obj.detail_Mizuto_titile; //detail_Mizuto_titile（DBではカラム）の値に内容のHTMLを変更
+					}
+					
+					let detail_Mizuto_text = document.getElementById("detail_Mizuto");
+					if(detail_Mizuto_text != null){//<p id="detail_Mizuto"></p>のタグがあったら
+						detail_Mizuto_text.innerHTML = obj.detail_Mizuto; //detail_Mizuto（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					<!--若松高校の説明-->
+					let detail_Wakamatu_titile_text = document.getElementById("detail_Wakamatu_titile");
+					if(detail_Wakamatu_titile_text != null){//<p id="detail_Wakamatu_titile"></p>のタグがあったら
+						detail_Wakamatu_titile_text.innerHTML = obj.detail_Wakamatu_titile; //detail_Wakamatu_titile（DBではカラム）の値に内容のHTMLを変更
+					}
+					
+					let detail_Wakamatu_text = document.getElementById("detail_Wakamatu");
+					if(detail_Wakamatu_text != null){//<p id="detail_Wakamatu"></p>のタグがあったら
+						detail_Wakamatu_text.innerHTML = obj.detail_Wakamatu; //detail_Wakamatu（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					<!--普通科の高校の説明-->
+					let detail_Ftuu_text = document.getElementById("detail_Ftuu");
+					if(detail_Ftuu_text != null){//<p id="detail_Ftuu"></p>のタグがあったら
+						detail_Ftuu_text.innerHTML = obj.detail_Ftuu; //detail_Ftuu（DBではカラム）の値に内容のHTMLを変更
+					}
+
+
+
+
+					let detail_text = document.getElementById("detail");
+					if(detail_text != null){//<p id="detail"></p>のタグがあったら
+						detail_text.innerHTML = obj.detail; //detail（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let detail_2_text = document.getElementById("detail_2");
+					if(detail_2_text != null){//<p id="detail_2"></p>のタグがあったら
+						detail_2_text.innerHTML = obj.detail_2; //detail_2（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let detail_3_text = document.getElementById("detail_3");
+					if(detail_3_text != null){//<p id="detail_3"></p>のタグがあったら
+						detail_3_text.innerHTML = obj.detail_3; //detail_3（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let detail_4_text = document.getElementById("detail_4");
+					if(detail_4_text != null){//<p id="detail_4"></p>のタグがあったら
+						detail_4_text.innerHTML = obj.detail_4; //detail_4（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let detail_5_text = document.getElementById("detail_5");
+					if(detail_5_text != null){//<p id="detail_5"></p>のタグがあったら
+						detail_5_text.innerHTML = obj.detail_5; //detail_5（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let detail_6_text = document.getElementById("detail_6");
+					if(detail_6_text != null){//<p id="detail_6"></p>のタグがあったら
+						detail_6_text.innerHTML = obj.detail_6; //detail_6（DBではカラム）の値に内容のHTMLを変更
+					}
+
+
+					let syosai_detail_text = document.getElementById("syosai_detail");
+					if(syosai_detail_text != null){//<p id="syosai_detail"></p>のタグがあったら
+						syosai_detail_text.innerHTML = obj.syosai_detail; //syosai_detail（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let syosai_detail_2_text = document.getElementById("syosai_detail_2");
+					if(syosai_detail_2_text != null){//<p id="syosai_detail_2"></p>のタグがあったら
+						syosai_detail_2_text.innerHTML = obj.syosai_detail_2; //syosai_detail_2（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let syosai_detail_3_text = document.getElementById("syosai_detail_3");
+					if(syosai_detail_3_text != null){//<p id="syosai_detail_3"></p>のタグがあったら
+						syosai_detail_3_text.innerHTML = obj.syosai_detail_3; //syosai_detail_3（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let syosai_detail_4_text = document.getElementById("syosai_detail_4");
+					if(syosai_detail_4_text != null){//<p id="syosai_detail_4"></p>のタグがあったら
+						syosai_detail_4_text.innerHTML = obj.syosai_detail_4; //syosai_detail_4（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let syosai_detail_5_text = document.getElementById("syosai_detail_5");
+					if(syosai_detail_5_text != null){//<p id="syosai_detail_5"></p>のタグがあったら
+						syosai_detail_5_text.innerHTML = obj.syosai_detail_5; //syosai_detail_5（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let syosai_detail_6_text = document.getElementById("syosai_detail_6");
+					if(syosai_detail_6_text != null){//<p id="syosai_detail_6"></p>のタグがあったら
+						syosai_detail_6_text.innerHTML = obj.syosai_detail_6; //syosai_detail_6（DBではカラム）の値に内容のHTMLを変更
+					}
+
+
+					let jusyo_text = document.getElementById("jusyo");
+					if(jusyo_text != null){//<p id="jusyo"></p>のタグがあったら
+						jusyo_text.innerHTML = obj.jusyo; //jusyo（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let jusyo_2_text = document.getElementById("jusyo_2");
+					if(jusyo_2_text != null){//<p id="jusyo_2"></p>のタグがあったら
+						jusyo_2_text.innerHTML = obj.jusyo_2; //jusyo_2（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let jusyo_3_text = document.getElementById("jusyo_3");
+					if(jusyo_3_text != null){//<p id="jusyo_3"></p>のタグがあったら
+						jusyo_3_text.innerHTML = obj.jusyo_3; //jusyo_3（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let jusyo_4_text = document.getElementById("jusyo_4");
+					if(jusyo_4_text != null){//<p id="jusyo_4"></p>のタグがあったら
+						jusyo_4_text.innerHTML = obj.jusyo_4; //jusyo_4（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let jusyo_5_text = document.getElementById("jusyo_5");
+					if(jusyo_5_text != null){//<p id="jusyo_5"></p>のタグがあったら
+						jusyo_5_text.innerHTML = obj.jusyo_5; //jusyo_5（DBではカラム）の値に内容のHTMLを変更
+					}
+
+					let jusyo_6_text = document.getElementById("jusyo_6");
+					if(jusyo_6_text != null){//<p id="jusyo_6"></p>のタグがあったら
+						jusyo_6_text.innerHTML = obj.jusyo_6; //jusyo_6（DBではカラム）の値に内容のHTMLを変更
+					
+
+					
 					let image_list = document.getElementById("image_list");
 					if(image_list){//<div id="image_list">のタグがあったら
 						image_list.innerHTML = ""; //id=image_listのタグの中のHTMLを空にする
