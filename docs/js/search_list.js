@@ -11,7 +11,7 @@ window.onload = function onLoad() {
             
         search_url +='?q='+keyword;//キーワードをURLに追加
         search_url = encodeURI(search_url); //URLエンコードを行い
-        //window.location.href = search_url; //検索機能の付いたhtmlとreadJSON_list.jsのコピーのペアに結果を表示させる
+        window.location.href = search_url; //検索機能の付いたhtmlとreadJSON_list.jsのコピーのペアに結果を表示させる
         window.open(search_url); //検索機能の付いたhtmlとreadJSON_list.jsのコピーのペアに結果を表示させる（別タブで開く）
     });
 
