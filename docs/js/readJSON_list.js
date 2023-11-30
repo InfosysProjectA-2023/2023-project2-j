@@ -11,7 +11,7 @@
 		}
 	};
 
-	const detail_html = "detail_J.html"; //個別詳細形式のページのHTMLファイル
+	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
 
 	//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_j/data.json";
 	// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
