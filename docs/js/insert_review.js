@@ -47,8 +47,8 @@ window.onload = function onLoad() {
 	}
 
 	fetch_json(url).then(function(data){ //JSONデータを取得したら
-		//console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
-		//console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
+		console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
+		console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
 
 		const review_tag = document.getElementById("review_list"); //id="review_list"の<table>タグを取得
 		//JSONデータからレビューを一行ずつ取り出し，HTMLを繰り返し生成
