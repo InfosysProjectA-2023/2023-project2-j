@@ -51,7 +51,7 @@
 			let item_html='';
 
 			//?q=検索語 を付けてelemの要素を検索する場合は，下記のif文を入れる（item_htmlの生成の文を囲む）
-			//if(q == 0 || (q != 0 && elem.title.indexOf(q) != -1)) { //?q=が無いときはq==0，?q=があるとき(q!=0)はelemの要素（title, abstract, detailなど）にマッチ
+			if(q == 0 || (q != 0 && elem.title.indexOf(q) != -1)) { //?q=が無いときはq==0，?q=があるとき(q!=0)はelemの要素（title, abstract, detailなど）にマッチ
 			item_html += '<div class="col">';
 			item_html += '<div class="card">'; //Bootstrapのcardを使って繰り返し要素を出力する（ここでは1段のみ）
 			item_html += '<img class="card-img-top" src="photos/'+elem.image_file+'_thum.jpg" alt="'+elem.title+'の画像">'; //image_fileの値と対応する画像のファイル名に_thumを付けた.jpgファイルを用意する
@@ -62,7 +62,7 @@
 			item_html += '</div>';
 			item_html += '</div>';
 			item_html += '</div>';
-			//} //if(elem.title.indexOf(q) != -1) {の終わり（先頭の//だけ消す）
+			} //if(elem.title.indexOf(q) != -1) {の終わり（先頭の//だけ消す）
 			//”item_htmlの生成の文”はここまで
 
 			list_container_row.innerHTML += item_html;//生成したHTMLを<div id="main_content">～</div>間に追加
