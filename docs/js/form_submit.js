@@ -44,8 +44,8 @@ window.onload = function onLoad() {
 						
 			// 通信成功時の処理
 			postData(url, method, data, timeout, dataType, crossDomain, beforeSend, complete).then(function(data){
-				console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
-				console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
+				//console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
+				//console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
 				// 入力値を初期化
 				form[0].reset();
 				
