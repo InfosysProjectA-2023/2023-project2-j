@@ -59,6 +59,7 @@ window.onload = function onLoad() {
 			//scoreの計算などを適宜読み取り対象として加えてみよう
 			let item_html = '<tr>';
 			item_html += '<th>'+review.user_name+'</th>';
+			item_html += '<td>'+review.score+'</td>';
 			item_html += '<td>'+review.text+'</td>';
 			item_html += '</tr>';
 
