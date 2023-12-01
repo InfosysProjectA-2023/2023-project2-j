@@ -14,7 +14,7 @@ window.onload = function onLoad() {
 	//下記のURLは変更の必要なし（WebAPIです）
 	let url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_json.php?";
 
-	let gid = "X";
+	let gid = "j";
 	gid = document.getElementById("gid"); //グループのidを表す<input type="hidden" id="gid">があったら
 	if(gid != null){
 			gid =gid.value; //obj_idの値を取得
