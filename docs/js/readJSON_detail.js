@@ -220,6 +220,7 @@ window.onload = function onLoad() {
 					let jusyo_6_text = document.getElementById("jusyo_6");
 					if(jusyo_6_text != null){//<p id="jusyo_6"></p>のタグがあったら
 						jusyo_6_text.innerHTML = obj.jusyo_6; //jusyo_6（DBではカラム）の値に内容のHTMLを変更
+					}
 					
 
 					
