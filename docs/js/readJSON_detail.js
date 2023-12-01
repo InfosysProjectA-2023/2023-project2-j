@@ -57,15 +57,6 @@ window.onload = function onLoad() {
 					if(thumnail_img != null){
 						thumnail_img.setAttribute("src","./photos/"+obj.image_file+"_thum.jpg");
 					}
-					let image_file1 = document.getElementById("image_file1");
-					if(image_file1 != null){
-						image_file1.setAttribute("src","./photos/"+obj.image_file1+"_thum.jpg");
-					}
-
-					let image_file2 = document.getElementById("image_file2");
-					if(image_file2 != null){
-						image_file2.setAttribute("src","./photos/"+obj.image_file2+"_thum.jpg");
-					}
 
 					let abstract_text = document.getElementById("abstract");
 					if(abstract_text != null){ //<p id="abstract"></p>のタグがあったら
@@ -224,28 +215,28 @@ window.onload = function onLoad() {
 					
 
 					
-					//let image_list = document.getElementById("image_list");
-					//if(image_list){//<div id="image_list">のタグがあったら
-						//image_list.innerHTML = ""; //id=image_listのタグの中のHTMLを空にする
-						//let image_list_html = ""; //HTMLを文字列として追加していく
-						//各画像ファイルを「追加の画像」としてlightbox2のリストとして<img>タグを追加していく
-						//if(obj.image_file1 != null && obj.image_file1!=""){
-							//image_list_html += '<a href="./photos/'+obj.image_file1+'.jpg" data-lightbox="image-list">';
-							//image_list_html += '<img src="./photos/'+obj.image_file1+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
-						//}
+					let image_list = document.getElementById("image_list");
+					if(image_list){//<div id="image_list">のタグがあったら
+						image_list.innerHTML = ""; //id=image_listのタグの中のHTMLを空にする
+						let image_list_html = ""; //HTMLを文字列として追加していく
+						各画像ファイルを「追加の画像」としてlightbox2のリストとして<img>タグを追加していく
+						if(obj.image_file1 != null && obj.image_file1!=""){
+							image_list_html += '<a href="./photos/'+obj.image_file1+'.jpg" data-lightbox="image-list">';
+							image_list_html += '<img src="./photos/'+obj.image_file1+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
+						}
 
-						//if(obj.image_file2 != null && obj.image_file2!=""){
-							//image_list_html += '<a href="./photos/'+obj.image_file2+'.jpg" data-lightbox="image-list">';
-							//image_list_html += '<img src="./photos/'+obj.image_file2+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
-						//}
+						if(obj.image_file2 != null && obj.image_file2!=""){
+							image_list_html += '<a href="./photos/'+obj.image_file2+'.jpg" data-lightbox="image-list">';
+							image_list_html += '<img src="./photos/'+obj.image_file2+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
+						}
 
-						//if(obj.image_file3 != null && obj.image_file3!=""){
-							//image_list_html += '<a href="./photos/'+obj.image_file3+'.jpg" data-lightbox="image-list">';
-							//image_list_html += '<img src="./photos/'+obj.image_file3+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
-						//}
+						if(obj.image_file3 != null && obj.image_file3!=""){
+							image_list_html += '<a href="./photos/'+obj.image_file3+'.jpg" data-lightbox="image-list">';
+							image_list_html += '<img src="./photos/'+obj.image_file3+'_thum.jpg" class="col-3 mb-5 box-shadow"/></a>';
+						}
 
 						image_list.innerHTML = image_list_html; //id=image_listのタグの中のHTMLをimage_list_htmlの文字列にする
-	 				//}
+	 				}
 
 					let star_ratings = document.getElementsByClassName("star-rating");
 
