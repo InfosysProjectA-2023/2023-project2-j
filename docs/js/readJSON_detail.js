@@ -78,6 +78,7 @@ window.onload = function onLoad() {
 					let detail_Aihara_text = document.getElementById("detail_Aihara");
 					if(detail_Aihara_text != null){//<p id="detail_Aihara"></p>のタグがあったら
 						detail_Aihara_text.innerHTML = obj.detail_Aihara; //detail_Aihara（DBではカラム）の値に内容のHTMLを変更
+					}
 
 					<!--浦和高校の説明-->
 					let detail_Urawa_titile_text = document.getElementById("detail_Urawa_titile");
