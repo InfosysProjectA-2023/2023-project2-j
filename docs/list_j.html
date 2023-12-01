@@ -91,12 +91,12 @@
   <!-- JavaScriptのライブラリ（jQueryプラグイン等を使う場合は，下記のタグのコメントを外す） -->
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
-  <!-- 施設ごとの情報のJSONデータ（本来は，データベースからサーバで作成される想定）から読み取り -->
-  <script src="js/readJSON_list.js"></script>
-
-  <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理 -->
+  <!-- search_list.jsは，?q=でページを呼んで，検索結果を含む表示を作るようにする処理を行うJavaScriptファイル -->
   <script src="js/search_list.js"></script>
-
+	
+  <!-- 詳細情報のデータをDBからJSONから読み取り -->
+  <script src="js/readJSON_detail.js"></script>
+	
 </body>
 
 </html>
