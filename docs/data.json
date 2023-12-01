@@ -16,8 +16,8 @@
 			"image_file" : "thumnail_sample_300",
 			"abstract" : "2つめの詳細ページです．",
 			"score" : 4.0,
-			"image_file1" : "",
-			"image_file2" :	"",
+			"image_file1" : "img101",
+			"image_file2" :	"img102",
 			"lat" :	"35.3732035",
 			"lng" : "139.4184921",
 			"detail" : "2つめ以降の詳細ページのデータは，１つめのオブジェクト（まとまり）の後に,（カンマ）を入れて，追加していきます．"
@@ -27,8 +27,8 @@
 			"image_file" : "thumnail_sample_300",
 			"abstract" : "2つめの詳細ページです．",
 			"score" : 4.0,
-			"image_file1" : "",
-			"image_file2" :	"",
+			"image_file1" : "img101",
+			"image_file2" :	"img102",
 			"lat" :	"35.3732035",
 			"lng" : "139.4184921",
 			"detail" : "2つめ以降の詳細ページのデータは，１つめのオブジェクト（まとまり）の後に,（カンマ）を入れて，追加していきます．"
@@ -38,8 +38,8 @@
 			"image_file" : "thumnail_sample_300",
 			"abstract" : "2つめの詳細ページです．",
 			"score" : 4.0,
-			"image_file1" : "",
-			"image_file2" :	"",
+			"image_file1" : "img101",
+			"image_file2" :	"img102",
 			"lat" :	"35.3732035",
 			"lng" : "139.4184921",
 			"detail" : "2つめ以降の詳細ページのデータは，１つめのオブジェクト（まとまり）の後に,（カンマ）を入れて，追加していきます．"
@@ -49,8 +49,8 @@
 			"image_file" : "thumnail_sample_300",
 			"abstract" : "2つめの詳細ページです．",
 			"score" : 4.0,
-			"image_file1" : "",
-			"image_file2" :	"",
+			"image_file1" : "img101",
+			"image_file2" :	"img102",
 			"lat" :	"35.3732035",
 			"lng" : "139.4184921",
 			"detail" : "2つめ以降の詳細ページのデータは，１つめのオブジェクト（まとまり）の後に,（カンマ）を入れて，追加していきます．"
