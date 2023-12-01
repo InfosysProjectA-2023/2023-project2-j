@@ -36,7 +36,7 @@
               <a class="nav-link active" aria-current="page" href="https://infosysprojecta-2023.github.io/2023-project2-j/list_j.html">フロントページ</a><!-- hrefのリンク先は各チームで修正すること -->
             </li>
             <li class="nav-item dropdown"><!-- カテゴリ別のメニュー項目を作る場合などに利用する．なお，hrefのリンク先は各チームで修正すること -->
-              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ページのカテゴリ</a>
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">高校のカテゴリ一覧</a>
               <ul class="dropdown-menu">
                <li><a class="dropdown-item" href="./detail_j.html?id=1">相原高校</a></li>
                 <li><a class="dropdown-item" href="./detail_j.html?id=2">浦和商業高校</a></li>
