@@ -12,7 +12,8 @@
 	};
 
 	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
-	if (urlParam == 4){
+	let id = urlParam('id');
+	if (id == 4){
 		const detail_html = "index.html";
 	}
 
