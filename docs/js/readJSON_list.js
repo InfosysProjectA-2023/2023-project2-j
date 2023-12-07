@@ -12,12 +12,9 @@
 	};
 
 	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
-	const urlParam = function(name){
-		let results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-		if results == 4){
+	if (results == 4){
 		const detail_html = "index.html";
-		}
-	};
+	}
 
 	//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_j/data.json";
 	// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
