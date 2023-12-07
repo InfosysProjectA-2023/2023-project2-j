@@ -12,7 +12,7 @@
 	};
 
 	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
-	if (name == 4){
+	if (urlParam == 4){
 		const detail_html = "index.html";
 	}
 
