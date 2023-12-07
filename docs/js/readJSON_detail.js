@@ -45,12 +45,12 @@ window.onload = function onLoad() {
 					head_title.item(0).innerText = obj.title; //<head><title>～</title></head>の間の～のところ（文字列）を変更
 					let top_title = document.getElementById("top-title");
 					top_title.innerText = obj.title; //ページの一番上の見出しの<div id="top-title">ところ（文字列）を変更
-					let top_abstract = document.getElementById("top-abstract");
-					top_abstract.innerText = obj.abstract; //ページの一番上の見出しの<div id="top-abstract">ところ（文字列）を変更
-					let page_headline = document.getElementsByTagName("h2");
-					if(page_headline.length > 0){ //<h2>のタグがあったら(すべてのh2タグが変更されるので，必要に応じてidで区別する)
-						page_headline.item(0).innerText = obj.title;
-					}
+					//let top_abstract = document.getElementById("top-abstract");
+					//top_abstract.innerText = obj.abstract; //ページの一番上の見出しの<div id="top-abstract">ところ（文字列）を変更
+					//let page_headline = document.getElementsByTagName("h2");
+					//if(page_headline.length > 0){ //<h2>のタグがあったら(すべてのh2タグが変更されるので，必要に応じてidで区別する)
+						//page_headline.item(0).innerText = obj.title;
+					//}
 
 					//<img id="thumnail_img">タグのsrcの値をサムネイル画像のファイルに設定（photosフォルダに”画像名_thum.jpg”がある必要がある）
 					let thumnail_img = document.getElementById("thumnail_img");
