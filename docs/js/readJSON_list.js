@@ -12,8 +12,7 @@
 	};
 
 	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
-	let results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-	if (results == 4){
+	if (name == 4){
 		const detail_html = "index.html";
 	}
 
