@@ -14,6 +14,10 @@ main {
 	background: #99e0ff;
 }
 
+.bg-white{
+	background: #ffffff;
+}
+
 .border-dashed{
 	border: 1pt;
 	border-style: dashed;
