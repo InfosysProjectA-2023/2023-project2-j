@@ -82,7 +82,16 @@ window.onload = function onLoad() {
 					if(jusyo_text != null){//<p id="jusyo"></p>のタグがあったら
 						jusyo_text.innerHTML = obj.jusyo; //jusyo（DBではカラム）の値に内容のHTMLを変更
 					}
-					
+
+					let event_text = document.getElementById("event");
+					if(event_text != null){ //<p id="event"></p>のタグがあったら
+						event_text.innerHTML = obj.event; //event（DBではカラム）の値に内容のテキストを変更
+					}
+
+					let kotu_text = document.getElementById("kotu");
+					if(kotu_text != null){ //<p id="kotu"></p>のタグがあったら
+						kotu_text.innerHTML = obj.kotu; //kotu（DBではカラム）の値に内容のテキストを変更
+					}
 					
 					let image_list = document.getElementById("image_list");
 					if(image_list){//<div id="image_list">のタグがあったら
