@@ -69,17 +69,22 @@
     <!-- ただし，idの値を使ってdata.jsonに蓄積してある値を差し込むようにする仕組みの利用は，要求事項のため，厳守すること -->
     <div class="container">
       <div class="row m-3"><!-- 紹介対象の内容（ここから）-->
-        <div class="col-md-7">
-          <center>
+	  <center>
 		  <h2 id="abstract" class="bg-lightblue">紹介対象の名前
 	  </center>
+        <div class="col-md-7">
             <!-- <span class="text-muted">It'll blow your mind.</span> -->
           </h2>
-				  <p id="detail"> ここに詳細な説明を書き込んでいきます． </p>
+				  <p id="detail" class="bg-white"> ここに詳細な説明を書き込んでいきます． </p>
         </div>
-        <div class="col-md-5">
-          <img id="thumnail_img" class="img-fluid mx-auto box-shadow" src="./photos/thumnail_sample_300_thum.jpg" alt="画像の代替テキスト">
-        </div>
+	      
+        <div class="col-md-5">	
+	<p id="event" class="bg-white"> ここにイベント説明が入る </p>
+	</div>
+
+	<div class="col-md-5">
+        <img id="thumnail_img" class="img-fluid mx-auto box-shadow" src="./photos/thumnail_sample_300_thum.jpg" alt="画像の代替テキスト">
+        
       </div>
 
       <div class="row m-3"><!-- 紹介対象の詳細（ここから）-->
@@ -89,15 +94,6 @@
                 <div id="image_list">
             <a href="./photos/thumnail_sample_300.jpg" data-lightbox="image-list">
               <img src="./photos/thumnail_sample_300_thum.jpg" class="col-3 mb-5 box-shadow"/></a>
-          </div>
-
-          <!-- 評価の☆を表示する -->
-          <h3 class="pl-3">評価：</h3>
-
-          <div class="star-rating col-5 m-3 mb-5">
-            <!-- width: ○○%が☆5つに対する評価のパーセンテージ（例：4.5→90%） -->
-            <div class="star-rating-front" style="width: 95%">★★★★★</div>
-            <div class="star-rating-back">★★★★★</div>
           </div>
 
           <!-- 地図の表示(JavaScript) -->
