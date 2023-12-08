@@ -1,9 +1,9 @@
 { "introduction_obj_list": 
 	[
-		{ "title" : "文教大学湘南キャンパス",
+		{ "title" : "神奈川県立相原高等学校",
 			"id" : 0,
 			"image_file" : "thumnail_sample_300",
-			"abstract" : "文教大学湘南キャンパスです．",
+			"abstract" : "神奈川にある商業科・農業科を併合している高校です。今回は商業科に焦点を当てます。",
 			"score" : 4.6,
 			"image_file1" : "img101",
 			"image_file2" :	"img102",
