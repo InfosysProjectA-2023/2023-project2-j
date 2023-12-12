@@ -34,8 +34,7 @@ main {
 
 /* 地図の表示領域の設定 */
 #map_here{
-	float: center;
-	clear: center;
+	text-align: center;
 	width: 800px;
 	height: 300px;
 }
