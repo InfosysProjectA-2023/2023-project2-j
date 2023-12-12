@@ -148,10 +148,33 @@ window.onload = function onLoad() {
 					}
 
 					//リンク張り。
-					let link = document.getElementById("link");
-					if(link != null){//<div id="link">のタグがあったら
-						let Link = window.open('link');
+					let request = new XMLHttpRequest();
+					request.open('GET', json_url);
+					request.responseType = 'json';
+
+					request.send();
+
+					request.onload = function() {
+					  let listJSON = request.response;
+					  listJSON = JSON.parse(JSON.stringify(listJSON));
+
+					  pageList(listJSON.lists)
 					}
+
+					function pageList(els) {
+					  let section = document.querySelector('.js-lists');
+
+					  els.forEach(function(el) {
+					    let link = el.link;
+    
+ 					   let sampleCode ='<a href="' + link + '">' +
+  					   '</a>';
+
+					    section.insertAdjacentHTML('beforeend', sampleCode);
+					  });
+					}
+
+					
 				} //if(main != null)の終わり
 				else{
 					alert('<main>のタグは消さないでください．');
