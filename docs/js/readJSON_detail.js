@@ -146,6 +146,12 @@ window.onload = function onLoad() {
 						//マーカーを地図に追加する
 						L.marker([obj.lat, obj.lng]).addTo(map);
 					}
+
+					//リンク張り。
+					let link = document.getElementById("link");
+					if(link != null){//<div id="link">のタグがあったら
+						let Link = window.open('link');
+					}
 				} //if(main != null)の終わり
 				else{
 					alert('<main>のタグは消さないでください．');
