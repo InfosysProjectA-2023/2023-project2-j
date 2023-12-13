@@ -14,6 +14,10 @@ main {
 	background: #99e0ff;
 }
 
+.center{
+	margin: 0 auto;
+}
+
 .futter{
 	background: #efffff;
 }
