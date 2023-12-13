@@ -160,24 +160,22 @@
       </div>
 	      <!-- 紹介対象の詳細（ここまで）-->
 
-			
-    <div class="row">
-        <table class="table">
-          <thead><tr><th>ユーザ名</th><th>評価</th><th>レビュー内容</th></tr></thead>
-          <tbody id="review_list"></tbody>
-        </table>
-      </div>
     </div>
 	    
       <!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
       <center><div class="m-5 form-group">
-                <h3>レビューの投稿</h3><br />
+                <h3>このWebページのレビュー</h3><br />
 	      <div class="accordion-test">
 		<details>
-			<summary>このサイトのレビューをする</summary>
+			<summary>このサイトのレビューを見る・する</summary>
 			<div class="contents">
-				<p>
-                <center>
+                <div class="center">			
+  			<div class="row">
+     			<table class="table">
+      			<thead><tr><th>ユーザ名</th><th>評価</th><th>レビュー内容</th></tr></thead>
+        		<tbody id="review_list"></tbody>
+       			</table>
+    			</div>
 			<div class="input-group">
                   <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
                   <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
@@ -196,8 +194,7 @@
                     <input class="form-control" type="submit" value="送信">
                   </form>
                 </div>
-		</center>
-		</p>
+		</div>
 		</div>
 	</details>
       	</div>
