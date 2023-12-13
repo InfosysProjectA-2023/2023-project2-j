@@ -55,6 +55,12 @@ main {
     padding: 0;
 }
 
+/*右寄せ*/
+.right{
+    text-align: right;
+    background-color: chartreuse;
+}
+
 /*平行線*/
 .cp_hr04 {
 	border-width: 3px 0 0 0;
