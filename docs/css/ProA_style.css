@@ -37,6 +37,26 @@ main {
 	height: 50%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn a {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 300px;
+	height: 60px;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+        background-color: #7dca65;
+
+        border-radius: 20px;
+}
+
 /* 地図の表示領域の設定 */
 #map_here{
 	text-align: center;
