@@ -163,6 +163,11 @@ a {
     padding: 0;
 }
 
+/*写真*/
+#thumnail_img{
+    float: right;
+}
+
 /* 地図の表示領域の設定 */
 #map_here{
 	text-align: center;
