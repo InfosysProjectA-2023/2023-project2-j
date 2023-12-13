@@ -147,6 +147,41 @@ window.onload = function onLoad() {
 						L.marker([obj.lat, obj.lng]).addTo(map);
 					}
 
+					//下記のURLは変更の必要なし（WebAPIです）
+					let url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_json.php?";
+
+					let gid = "j";
+					gid = document.getElementById("gid"); //グループのidを表す<input type="hidden" id="gid">があったら
+					if(gid != null){
+							gid =gid.value; //obj_idの値を取得
+					}
+					else{
+						alert("id=\"gid\"の属性が付いたinputタグ，あるいはdivタグをHTMLファイルに記入してあるか確認してください．");
+					}
+					url += "gid="+gid;
+
+					let id = urlParam('id'); //?id=として渡されてきた値を読み取る
+					let obj_id_input = document.getElementById("obj_id"); //id="obj_id"が付いた<input>タグがあったら
+					obj_id_input.value = id; //id="obj_id"が付いた<input>タグのvalue=に値を設定
+					if(id != 0){
+						url += "&obj_id="+id;
+					}
+					else{
+						url += "&obj_id="+id;
+					}
+				
+					//urlにfetchAPIでアクセスして，JSONデータを取得
+					const fetch_json = async (url) => {
+						const response = await fetch(url);
+						if (response.ok) {
+							const data = await response.json();
+							return data;
+						}
+						else{
+							alert("エラー：" + response.status+"\n以下のURLにアクセスできませんでした．"+url);
+						}
+					}
+				
 					fetch_json(url).then(function(data){ //JSONデータを取得したら
 					//console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
 					//console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
