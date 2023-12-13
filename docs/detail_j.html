@@ -95,7 +95,7 @@
 		
 		<div class="box74">
 		<div class="box-title"><h2>ニュース情報！</h2></div>
-		<h3 id="event">ニュース情報<h3>
+		<h3 id="event">ニュース情報</h3>
 		</div>
 	</center>
 	
@@ -157,6 +157,7 @@
 		</div>
 		</center>
 		  </div>
+      </div>
 	      <!-- 紹介対象の詳細（ここまで）-->
 
 			
@@ -177,8 +178,14 @@
       <p>
 
       <!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
-      <div class="m-5 form-group">
+      <center><div class="m-5 form-group">
                 <h3>レビューの投稿</h3><br />
+	      <div class="accordion-test">
+		<details>
+			<summary>質問内容の表示</summary>
+			<div class="contents">
+				<p>答えが表示</p>
+			</div>
                 <div class="input-group">
                   <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
                   <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
@@ -197,7 +204,12 @@
                     <input class="form-control" type="submit" value="送信">
                   </form>
                 </div> 
+	</details>
+	<details>
+      	</div>
       </div>
+      </center>
+      
 
   </main>
 
