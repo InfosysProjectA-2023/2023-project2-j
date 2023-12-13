@@ -32,6 +32,11 @@ main {
 	box-shadow: 2px 2px 4px gray; /*影の幅 右 下　ぼかしの幅　影の色(カラーコードも可） */
 }
 
+.small_50{
+	width: 50%;
+	height: 50%;
+}
+
 /* 地図の表示領域の設定 */
 #map_here{
 	text-align: center;
