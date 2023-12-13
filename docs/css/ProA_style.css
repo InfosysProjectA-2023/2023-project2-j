@@ -154,6 +154,13 @@ main {
 	left: 20px; /*左から(0px)移動*/
 }
 
+/*地図自体の枠組み*/
+.box5 {
+	margin: 2em auto;
+	padding:2em;/*内側余白*/
+	background-color:#f0f7ff;/*背景の色*/
+}
+
 /*地図の枠組み*/
 .box6 {
     padding: 0.5em 1em;
