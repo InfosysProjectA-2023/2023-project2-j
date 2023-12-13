@@ -186,6 +186,43 @@ a {
     padding: 0;
 }
 
+/*アンケート*/
+.accordion-test summary{
+	position: relative;
+	list-style: none; /* デフォルトの三角形アイコンを消します */
+	padding: 15px 45px 15px 25px;
+	border:1px solid #000474;
+	cursor: pointer; /* ポインターを指さしマークに変更 */
+}
+
+.accordion-test summary::-webkit-details-marker {
+	display: none; /* Safariで表示されるデフォルトの三角形アイコンを消します */
+}
+
+.accordion-test summary::after{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: calc(50% - 10px);
+	right: 25px;
+	border-right: 4px solid #000474;
+	border-bottom: 4px solid #000474;
+	box-sizing: border-box;
+	content: "";
+	transform: rotate(45deg);
+	transition: top 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.accordion-test details[open] summary::after{
+	top: calc(50% - 5px);
+	transform: rotate(-135deg);
+}
+
+.accordion-test .contents{
+	padding: 15px 45px;
+	background:#E8ECF7;
+}
+
 /*写真*/
 #thumnail_img{
     float: right;
