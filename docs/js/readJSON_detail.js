@@ -147,34 +147,7 @@ window.onload = function onLoad() {
 						L.marker([obj.lat, obj.lng]).addTo(map);
 					}
 
-					//リンク張り。
-					let request = new XMLHttpRequest();
-					request.open('GET', json_url);
-					request.responseType = 'json';
-
-					request.send();
-
-					request.onload = function() {
-					  let listJSON = request.response;
-					  listJSON = JSON.parse(JSON.stringify(listJSON));
-
-					  pageList(listJSON.lists)
-					}
-
-					function pageList(els) {
-					  let section = document.querySelector('.js-lists');
-
-					  els.forEach(function(el) {
-					    let link = el.link;
-    
- 					   let sampleCode ='<a href="' + link + '">' +
-  					   '</a>';
-
-					    section.insertAdjacentHTML('beforeend', sampleCode);
-					  });
-					}
-
-					
+				
 				} //if(main != null)の終わり
 				else{
 					alert('<main>のタグは消さないでください．');
