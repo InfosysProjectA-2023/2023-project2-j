@@ -55,6 +55,13 @@ main {
     padding: 0;
 }
 
+/*平行線*/
+.cp_hr04 {
+	border-width: 3px 0 0 0;
+	border-style: double;
+	border-color: #ff6f00;
+}
+
 /*二重線*/
 .box2 {
 	margin: 2em auto;
