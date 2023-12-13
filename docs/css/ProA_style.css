@@ -55,6 +55,13 @@ main {
     padding: 0;
 }
 
+/*二重線*/
+.box2 {
+	margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border:double 5px #5a728b;/*線の種類・太さ・色*/
+}
+
 /*ニュース*/
 .box74{
 	margin: 2em auto; /* ボックスの余白 */
