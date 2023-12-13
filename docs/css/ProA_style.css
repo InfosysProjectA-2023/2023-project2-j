@@ -50,14 +50,14 @@ main {
 
 .box81 .box-title {
 	color: #5374cf ; /* タイトル文字色 */
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
 .box81 .box-title:before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f304";
-	font-size: 18px;
+	font-size: 30px;
 	margin: 0 3px 0 0;
 	font-weight: bold;
 }
@@ -108,14 +108,14 @@ main {
 
 .box84 .box-title {
 	color: #FFBD59; /* タイトル文字色 */
-	font-size: 18px;/*タイトル文字の大きさ*/
+	font-size: 30px;/*タイトル文字の大きさ*/
 	font-weight: bold;
 }
 
 .box84 .box-title:before {
 	font-family: "Font Awesome 5 Free";
 	content: '\f00c';
-	font-size: 18px;/*アイコンの大きさ*/
+	font-size: 30px;/*アイコンの大きさ*/
 	margin: 0 3px 0 0;
 	font-weight: bold;
 }
