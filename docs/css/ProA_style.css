@@ -43,6 +43,7 @@ main {
 
 /*ボード風*/
 .box12{
+    font-weight: bold;
     padding: 0.5em 1em;
     margin: 2em 0;
     color: #5989cf;
