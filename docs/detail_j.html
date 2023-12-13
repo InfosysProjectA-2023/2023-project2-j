@@ -168,7 +168,6 @@
         </table>
       </div>
     </div>
-    <p>
 	    
       <!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
       <center><div class="m-5 form-group">
@@ -178,7 +177,8 @@
 			<summary>このサイトのレビューをする</summary>
 			<div class="contents">
 				<p>
-                <div class="input-group">
+                <center>
+			<div class="input-group">
                   <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
                   <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
                     ユーザ名：<input class="form-control input-lg" type="text" size="30" name="user_name" required><br />
@@ -196,6 +196,7 @@
                     <input class="form-control" type="submit" value="送信">
                   </form>
                 </div>
+		</center>
 		</p>
 		</div>
 	</details>
