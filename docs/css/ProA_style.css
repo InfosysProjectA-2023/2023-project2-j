@@ -211,16 +211,19 @@ a {
 	content: "";
 	transform: rotate(45deg);
 	transition: top 0.4s ease-out, transform 0.4s ease-out;
+	margin: 0 auto;
 }
 
 .accordion-test details[open] summary::after{
 	top: calc(50% - 5px);
 	transform: rotate(-135deg);
+	margin: 0 auto;
 }
 
 .accordion-test .contents{
 	padding: 15px 45px;
 	background:#E8ECF7;
+	margin: 0 auto;
 }
 
 /*写真*/
