@@ -51,6 +51,20 @@ main {
     padding: 0;
 }
 
+/*ニュース*/
+.box4{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+}
+.box4 p {
+    margin: 0; 
+    padding: 0;
+}
+
 /*地図の枠組み*/
 .box6 {
     padding: 0.5em 1em;
