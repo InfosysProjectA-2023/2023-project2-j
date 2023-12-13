@@ -55,23 +55,23 @@ main {
     padding: 0;
 }
 
-.box4_moji{
-	background: #cde4ff;
-	border-top: solid 5px #5989cf;
-}
-
 /*ニュース*/
-.box4{
-    padding: 8px 19px;
-    margin: 2em 0;
-    color: #2c2c2f;
-    background: #cde4ff;
-    border-top: solid 5px #5989cf;
-    border-bottom: solid 5px #5989cf;
+.box74{
+	margin: 2em auto; /* ボックスの余白 */
+	background-color: #fafafa; /* ボックス背景色 */
+	padding:3em 2em 2em; /* ボックス内側余白 */
+	position:relative; /* 配置(ここを基準に)*/
+	border: 1px solid #5a728b;	/* ボックスの線 (太さ　種類　色)*/
 }
-.box4 p {
-    margin: 0; 
-    padding: 0;
+.box74 .box-title {
+	background-color:#5a728b; /* タイトル背景色 */
+	font-size: 1em;/* タイトル文字の大きさ */
+	color: #fff ; /* タイトル文字色 */
+	padding: 7px 10px;/*タイトルの余白*/
+	line-height: 1;/*タイトルの行の高さ*/
+	position:absolute;	/* 配置(ここを動かす) */
+	top: -10px; /*上から（0px）移動*/
+	left: 20px; /*左から(0px)移動*/
 }
 
 /*地図の枠組み*/
