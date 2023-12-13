@@ -147,6 +147,28 @@ window.onload = function onLoad() {
 						L.marker([obj.lat, obj.lng]).addTo(map);
 					}
 
+					fetch_json(url).then(function(data){ //JSONデータを取得したら
+					//console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
+					//console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
+
+					const review_tag = document.getElementById("review_list"); //id="review_list"の<table>タグを取得
+					//JSONデータからレビューを一行ずつ取り出し，HTMLを繰り返し生成
+					for(let i=0; i<data.review_list.length; i++){
+
+						let review = data.review_list[i]; //JSONデータから１つのレビューを取り出す
+						//※review_json.php側では，最初，新しい方から並び替え，5件を取得するようなSQL文としてある
+						//scoreの計算などを適宜読み取り対象として加えてみよう
+						let item_html = '<tr>';
+						item_html += '<th>'+review.user_name+'</th>';
+						item_html += '<td>'+review.score+'</td>';
+						item_html += '<td>'+review.text+'</td>';
+						item_html += '</tr>';
+
+						review_tag.innerHTML += item_html;//生成したHTMLを<tbody id="review_list">～</tbody>間に追加
+
+						}
+					});
+
 				
 				} //if(main != null)の終わり
 				else{
