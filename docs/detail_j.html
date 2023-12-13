@@ -122,6 +122,10 @@
 	</div>
 	</center>
 
+	<!--リンク一覧-->
+	<h2>学校の公式ホームページ一覧</h2>
+	
+
 		
 		
 	</div>
@@ -134,27 +138,37 @@
       </div>
     </div>
     <p>
-      <div class="m-5 form-group"><!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
-        <h3>レビューの投稿</h3><br />
-        <div class="input-group">
-          <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
-          <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
-            ユーザ名：<input class="form-control input-lg" type="text" size="30" name="user_name" required><br />
-            評価：<select class="form-control input-lg" name="review_score" size="1" required>
-              <option value="5">☆☆☆☆☆</option>
-              <option value="4">☆☆☆☆　</option>
-              <option value="3">☆☆☆　　</option>
-              <option value="2">☆☆　　　</option>
-              <option value="1">☆　　　　</option>
-            </select><br />
-            評価コメント：<br />
-            <textarea class="form-control" name="review_text" cols="50" rows="5"></textarea><br />
-            <input type="hidden" name="obj_id" id="obj_id"><!-- ここに各オブジェクトの番号を記入する必要はありません-->
-            <input type="hidden" name="gid" id="gid" value="j"><!-- ※※ ここは各グループの記号に必ず変更すること ※※ -->
-            <input class="form-control" type="submit" value="送信">
-          </form>
+          <div class="row">
+          <table class="table">
+            <thead><tr><th>ユーザ名</th><th>レビュー内容</th></tr></thead>
+            <tbody id="review_list"></tbody>
+          </table>
         </div>
+      <p>
+
+      <!-- レビュー投稿欄（送信はjs/form_submit.jsで行う -->
+      <div class="m-5 form-group">
+                <h3>レビューの投稿</h3><br />
+                <div class="input-group">
+                  <!--  actionのURLは，掲示板機能を提供するWebAPIなので，変更の必要はありません -->
+                  <form method="POST" action="https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_reviewAPI/review_reg.php">
+                    ユーザ名：<input class="form-control input-lg" type="text" size="30" name="user_name" required><br />
+                    評価：<select class="form-control input-lg" name="review_score" size="1" required>
+                      <option value="5">☆☆☆☆☆</option>
+                      <option value="4">☆☆☆☆　</option>
+                      <option value="3">☆☆☆　　</option>
+                      <option value="2">☆☆　　　</option>
+                      <option value="1">☆　　　　</option>
+                    </select><br />
+                    評価コメント：<br />
+                    <textarea class="form-control" name="review_text" cols="50" rows="5"></textarea><br />
+                    <input type="hidden" name="obj_id" id="obj_id"><!-- ここに各オブジェクトの番号を記入する必要はありません-->
+                    <input type="hidden" name="gid" id="gid" value="j"><!-- ※※ ここは各グループの記号に必ず変更すること ※※ -->
+                    <input class="form-control" type="submit" value="送信">
+                  </form>
+                </div> 
       </div>
+
   </main>
 
   <!-- フッターの表示 -->
