@@ -169,7 +169,7 @@ window.onload = function onLoad() {
 					else{
 						url += "&obj_id="+id;
 					}
-				
+
 					//urlにfetchAPIでアクセスして，JSONデータを取得
 					const fetch_json = async (url) => {
 						const response = await fetch(url);
@@ -181,7 +181,7 @@ window.onload = function onLoad() {
 							alert("エラー：" + response.status+"\n以下のURLにアクセスできませんでした．"+url);
 						}
 					}
-				
+
 					fetch_json(url).then(function(data){ //JSONデータを取得したら
 					//console.log(data); //デバッグ用に取得したJSONデータをコンソールに表示
 					//console.log(data.review_list); //デバッグ用に取得したJSONデータのreview_listをコンソールに表示
@@ -189,7 +189,6 @@ window.onload = function onLoad() {
 					const review_tag = document.getElementById("review_list"); //id="review_list"の<table>タグを取得
 					//JSONデータからレビューを一行ずつ取り出し，HTMLを繰り返し生成
 					for(let i=0; i<data.review_list.length; i++){
-
 						let review = data.review_list[i]; //JSONデータから１つのレビューを取り出す
 						//※review_json.php側では，最初，新しい方から並び替え，5件を取得するようなSQL文としてある
 						//scoreの計算などを適宜読み取り対象として加えてみよう
@@ -198,13 +197,10 @@ window.onload = function onLoad() {
 						item_html += '<td>'+review.score+'</td>';
 						item_html += '<td>'+review.text+'</td>';
 						item_html += '</tr>';
-
 						review_tag.innerHTML += item_html;//生成したHTMLを<tbody id="review_list">～</tbody>間に追加
-
 						}
 					});
-
-					
+				
 				} //if(main != null)の終わり
 				else{
 					alert('<main>のタグは消さないでください．');
@@ -214,8 +210,5 @@ window.onload = function onLoad() {
     			alert("エラー：" + "以下のURLにアクセスできませんでした．"+url);
 			}
 		}; //const fetch_json = async (url) => の終わり
-
 		fetch_json(json_url); //非同期処理を開始
 }
-
-
