@@ -11,10 +11,9 @@
 		}
 	};
 
-	const detail_html = "detail_j.html"; //個別詳細形式のページのHTMLファイル
-	let id = urlParam('id');
+	const detail_html = "detail.html"; //個別詳細形式のページのHTMLファイル
 
-	//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_j/data.json";
+	//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project2_example/data.json";
 	// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
 	const json_url = "https://infosysprojecta-2023.github.io/2023-project2-j/data.json";
 
@@ -52,18 +51,18 @@
 			let item_html='';
 
 			//?q=検索語 を付けてelemの要素を検索する場合は，下記のif文を入れる（item_htmlの生成の文を囲む）
-			//if(q == 0 || (q != 0 && elem.title.indexOf(q) != -1)) { //?q=が無いときはq==0，?q=があるとき(q!=0)はelemの要素（title, abstract, detailなど）にマッチ
+			if(q == 0 || (q != 0 && elem.title.indexOf(q) != -1)) { //?q=が無いときはq==0，?q=があるとき(q!=0)はelemの要素（title, abstract, detailなど）にマッチ
 			item_html += '<div class="col">';
 			item_html += '<div class="card">'; //Bootstrapのcardを使って繰り返し要素を出力する（ここでは1段のみ）
-			item_html += '<img class="card-img-top" src="photos/'+elem.image_file+'_thum.jpg" alt="'+elem.title+'の画像">'; //image_fileの値と対応する画像のファイル名に_thumを付けた.jpgファイルを用意する
+			item_html += '<a href="'+detail_html+'?id='+elem.id+'" class="card-link"><img class="card-img-top" src="photos/'+elem.image_file+'_thum.jpg" alt="'+elem.title+'の画像"></a>'; //image_fileの値と対応する画像のファイル名に_thumを付けた.jpgファイルを用意する
 			item_html += '<div class="card-body">';
 			item_html += '<h5 class="card-title">'+elem.title+'</h5>';
 			item_html += '<p class="card-text">'+elem.abstract+'</p>';
-			item_html += '<a href="'+detail_html+'?id='+elem.id+'" class="card-link">詳細はこちらをクリック！</a>';
+			item_html += '<a href="'+detail_html+'?id='+elem.id+'" class="card-link">詳細...</a>';
 			item_html += '</div>';
 			item_html += '</div>';
 			item_html += '</div>';
-			//} //if(elem.title.indexOf(q) != -1) {の終わり（先頭の//だけ消す）
+			} //if(elem.title.indexOf(q) != -1) {の終わり（先頭の//だけ消す）
 			//”item_htmlの生成の文”はここまで
 
 			list_container_row.innerHTML += item_html;//生成したHTMLを<div id="main_content">～</div>間に追加
