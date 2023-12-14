@@ -59,7 +59,7 @@
 			item_html += '<div class="card-body">';
 			item_html += '<h5 class="card-title">'+elem.title+'</h5>';
 			item_html += '<p class="card-text">'+elem.abstract+'</p>';
-			item_html += '<a href="'+detail_html+'?id='+elem.id+'" class="card-link">詳細...</a>';
+			item_html += '<a href="'+detail_html+'?id='+elem.id+'" class="card-link">詳細はこちらをクリック！</a>';
 			item_html += '</div>';
 			item_html += '</div>';
 			item_html += '</div>';
