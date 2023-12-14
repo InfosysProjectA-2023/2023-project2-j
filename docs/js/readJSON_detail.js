@@ -83,6 +83,11 @@ window.onload = function onLoad() {
 						jusyo_text.innerHTML = obj.jusyo; //jusyo（DBではカラム）の値に内容のHTMLを変更
 					}
 
+					let tyui_text = document.getElementById("tyui");
+					if(tyui_text != null){//<p id="tyui"></p>のタグがあったら
+						tyui_text.innerHTML = obj.tyui; //tyui（DBではカラム）の値に内容のHTMLを変更
+					}
+
 					let event_text = document.getElementById("event");
 					if(event_text != null){ //<p id="event"></p>のタグがあったら
 						event_text.innerHTML = obj.event; //event（DBではカラム）の値に内容のテキストを変更
