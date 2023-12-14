@@ -280,14 +280,3 @@ a {
 	width: 1000px;
 	height: 400px;
 }
-
-/*スマホ*/
-.sumaho {
-  color: red;
-}
-
-@media screen and (min-width:768px) { 
-  .sumaho {
-    color:blue;
-  }
-}
